@@ -29,3 +29,16 @@
     margin-top: 0%;
     margin-bottom: 2%;
 }
+
+.messag p{
+    color: red;
+    font-size: 2rem;
+    font-size: 1.5em;
+    font-weight: 8%;
+}
+
+.message p{
+    color: green;
+    font-size: 1.5em;
+    font-weight: 8%;
+}

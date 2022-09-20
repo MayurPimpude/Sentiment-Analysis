@@ -17,7 +17,7 @@ model.summary()
 
 @app.route('/')
 def web():
-    return render_template('home.html')
+    return render_template('home.html',message=0,messag=0)
 
 
 @app.route('/predict', methods=['POST','GET'])
@@ -34,8 +34,12 @@ def home():
 
             sentiment = model.predict([[padded]])
             print(sentiment[0])
-            
-            return render_template('home.html',message=sentiment[0],messag=1-sentiment[0])
+
+            sentiment = sentiment[0]
+            sentiment1 = float(sentiment)
+            print(sentiment1)
+
+            return render_template('home.html',message=sentiment1,messag=1-sentiment1)
  
 
 if __name__ == '__main__':

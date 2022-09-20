@@ -53,7 +53,7 @@
 <form class="p-2 m-2" style="background: rgb(211, 210, 210);" action="/predict" method="post">
  
   <!-- Gutter g-1 -->
-<div class="row g-1 m-4">
+<div class="row g-1 m-3">
   <div class="col">
     <!-- Name input -->
     <div class="form-outline">
@@ -67,18 +67,30 @@
     <div class="form-outline">
       <h4 class="mb-3">Results</h4>
       <input class="form-control m-1" type="text" value="Positive : " aria-label="Disabled input example" disabled>
-      %
+      
+      {% if message==0 %}
+      <div class="message mx-4">
+          <p> {{message}} %</p>
+      </div>
+      {% endif %}
+
       {% if message %}
       <div class="message mx-4">
-          <p> {{message}}</p>
+          <p> {{message}} %</p>
       </div>
       {% endif %}
 
       <input class="form-control m-1" type="text" value="Negative : " aria-label="Disabled input example" disabled>
-      %
+
+      {% if messag==0 %}
+      <div class="messag mx-4">
+          <p>{{messag}} %</p>
+      </div>
+      {% endif %}
+
       {% if messag %}
       <div class="messag mx-4">
-          <p>{{messag}}</p>
+          <p>{{messag}} %</p>
       </div>
       {% endif %}
 
@@ -86,7 +98,7 @@
   </div>
 </div>
 
-<button type="submit" class="btn btn-primary btn-block button1 m-2 mx-4" style="width: 47%;">
+<button type="submit" class="btn btn-primary btn-block button1 m-1 mx-4" style="width: 47%;">
   Analysis Text
 </button>
 </form>
