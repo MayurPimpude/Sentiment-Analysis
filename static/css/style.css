@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+
+.jumbotron-fluid{
+    background-color: rgb(68, 68, 68);
+    color: aliceblue;
+}
+
+.head{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand{
+    font-family: 'Poppins', sans-serif;
+}
+
+.tweet{
+    height: 60%;
+    width: 80%;
+    margin-left: 5%;
+}
+
+.work{
+    height: 60%;
+    width: 60%;
+    margin-left: 5%;
+}
+
+.h1{
+    margin-top: 0%;
+    margin-bottom: 2%;
+}
